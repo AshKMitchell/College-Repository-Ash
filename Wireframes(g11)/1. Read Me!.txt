@@ -1,0 +1,22 @@
+====================
+Ash's tiny wireframe engine v 0.1
+====================
+
+HOW TO GET THE PROGRAM TO RUN:
+1: ensure that you are able to run java programs
+2: have the program and StdDraw in the same folder/project so they can call each other
+(for windows) {
+3: create a folder in the directory C:\Program Files (x86) labeled "AshPgms" without the quotes.
+}
+(for mac) {
+3a: go to the FileCallCheck, and the FileReadToString functions, and change the file directory.
+b: make the file directory what you want within the string, but with the slashes inbetween like so /users/name/Wireframes (I don't have a mac so this is just wishful thinking)
+}
+4: copy the .txt files in the folder you found this in (aside from this one) into AshPgms
+
+RESOURCES USED:
+StdDraw (API for drawing on the screen and double buffering)
+W3schools (file system)
+GeeksForGeeks (add to array function)
+StackOverflow (circle equation)
+IBIO (input function)
