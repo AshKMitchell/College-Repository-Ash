@@ -1,0 +1,7 @@
+Hi, this is version is missing the criterion D (video) that the main version should have, as it's too large to fit onto github.
+So, instead this is just a quick description of what the code does:
+
+It is able to take a .txt file (which is formatted in a specific way to make it easy to edit by humans) and will allow the user to select that file from a
+folder and view it as a 3d model on their screen, there are 2 modes, one for viewing and one for editing. The editing mode has a selection to select different points
+and see their properties and help you edit the file directly.
+The video would've been far better, but this is the best I can do.
