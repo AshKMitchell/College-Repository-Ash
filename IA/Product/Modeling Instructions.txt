@@ -1,0 +1,28 @@
+The modelling capabilities of the program are very limited, and are only meant for simple meshes, you can only use positive coordinates, and only in whole numbers, so scale your model to the degree of detail you want. The syntax for the program are:
+
+{...} - the indicators of a data point, all data should go inside. Everything outside will not be read and can be used as comments.
+, - the devider between numbers.
+! -the end indicator, the program will not read past this point.
+
+A data point will look like this:
+{4,4.75,1,2,3,5,0}
+
+There are two types of point, the camera point, and the regular points. The camera is at the 0th point of the 2d array, and so, is the first one you must write down, it goes as so:
+
+-the first three (0-2 in the 1d array) are the x, y, and z coordinates in that order of the camera, where you will veiw your models from.
+-the next three (3-5 in the 1d array) are the center of your model in x, y, and z coordinates.
+-The final point is the direction of the camera (6 in the 1d array) the number indicates where the camera will face. 1 is toward positive X, 2 is toward negative X, 3 is toward positive Y, 4 is toward negative Y, the camera cannot look along the Z axis.
+
+The other point, is the more common one, it is the 3d space point, it indicates a singular point in space, its colour, and its connections.
+
+-the first three (0-2 in the 1d array) are the x, y, and z coordinates in that order of the point in space it is.
+-the next three (3-5 in the 1d array) are the connections the point has to other points, the number must be another index of a point, and the program will draw a line between the current point, and the point at the index specified, 0 is empty, and will not draw, there can only be three connections to one point, if more are required, just create the point again with more connections.
+The final point (6 in the 1d array) is the colour, which goes as such:
+0: white
+1: blue
+2: orange
+3: green
+4: pink
+10: white dot
+
+In order to get your model working on this program, you need to add it to the program itself, in the FileCallMenu, there is an if statement, add an else if to the end, and then make the name the name of your file, adding the name to the menu list will also help.
